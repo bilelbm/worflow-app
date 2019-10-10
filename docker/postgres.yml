@@ -1,0 +1,9 @@
+version: '2'
+services:
+  growappsserver-postgresql:
+    image: postgres:11.4
+    environment:
+      - POSTGRES_USER=workflow
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
